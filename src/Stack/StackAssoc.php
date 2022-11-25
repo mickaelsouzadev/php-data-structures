@@ -2,7 +2,10 @@
 
 namespace Mickaelsouzadev\DataStrucutures\Stack;
 
-class StackAssoc implements StackInterface
+use Mickaelsouzadev\DataStrucutures\Interfaces\StackInterface;
+use Mickaelsouzadev\DataStrucutures\Interfaces\DataStructureInterface;
+
+class StackAssoc implements DataStructureInterface, StackInterface
 {
     private int $count;
     private array $items;

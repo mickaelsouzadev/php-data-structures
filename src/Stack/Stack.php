@@ -2,7 +2,10 @@
 
 namespace Mickaelsouzadev\DataStrucutures\Stack;
 
-class Stack implements StackInterface
+use Mickaelsouzadev\DataStrucutures\Interfaces\StackInterface;
+use Mickaelsouzadev\DataStrucutures\Interfaces\DataStructureInterface;
+
+class Stack implements DataStructureInterface, StackInterface
 {
     private array $items;
 
@@ -34,5 +37,12 @@ class Stack implements StackInterface
     public function size(): int
     {
         return count($this->items);
+    }
+
+    public function clear(): void
+    {
+        while (!$this->isEmpty()) {
+            $this->pop();
+        }
     }
 }
