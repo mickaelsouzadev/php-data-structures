@@ -3,9 +3,9 @@
 namespace Mickaelsouzadev\DataStrucutures\Queue;
 
 use Mickaelsouzadev\DataStrucutures\Interfaces\QueueInterface;
-use Mickaelsouzadev\DataStrucutures\Interfaces\DataStructureInterface;
+use Mickaelsouzadev\DataStrucutures\Interfaces\GenericDataStructureInterface;
 
-class Queue implements DataStructureInterface, QueueInterface
+class Queue implements GenericDataStructureInterface, QueueInterface
 {
     private int $count;
     private int $lowestCount;

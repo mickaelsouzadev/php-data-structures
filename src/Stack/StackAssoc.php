@@ -3,9 +3,9 @@
 namespace Mickaelsouzadev\DataStrucutures\Stack;
 
 use Mickaelsouzadev\DataStrucutures\Interfaces\StackInterface;
-use Mickaelsouzadev\DataStrucutures\Interfaces\DataStructureInterface;
+use Mickaelsouzadev\DataStrucutures\Interfaces\GenericDataStructureInterface;
 
-class StackAssoc implements DataStructureInterface, StackInterface
+class StackAssoc implements GenericDataStructureInterface, StackInterface
 {
     private int $count;
     private array $items;

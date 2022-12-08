@@ -2,10 +2,8 @@
 
 namespace Mickaelsouzadev\DataStrucutures\Interfaces;
 
-interface DataStructureInterface
+interface GenericDataStructureInterface
 {
-    public function peek(): mixed;
-
     public function isEmpty(): bool;
 
     public function size(): int;
